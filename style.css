@@ -1,0 +1,123 @@
+.corpo{
+    flex-wrap: wrap;
+    background-color: #051625;
+    overflow-x: hidden;
+}
+
+
+header{
+    background-color: aquamarine ;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#col1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8em;
+}
+
+#col1 img{
+    background-color: #051625;
+    width: 100px;
+    margin-left: 1em;
+   
+}
+
+#col2 {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#col2 h1{
+    margin-right: 5rem;
+}
+
+.areaAdiconar{
+    width: 100%;
+    
+}
+
+#adicionar{
+    
+    top: 1em;
+    right: 1em;
+    background-color: aquamarine;
+    color: #051625;
+    border-radius: 3px;
+    padding: .5em 1em;
+    
+}
+
+.nota{
+    background-color: aquamarine;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px ;
+    height: 290px;
+    width: 290px;
+    margin-top: 50px;
+}
+
+.nota .configuracao{
+    background-color: aquamarine;
+    justify-content: flex-end;
+    padding: 0.5em;
+}
+
+.nota .configuracao button{
+    color: white;
+    font-size: 1em;
+    margin-left: .5em;
+    border: none;
+}
+
+.nota textarea{
+    outline: none;
+    font-family: inherit;
+    font-size: 1.2em;
+    border: none;
+    height: 290px;
+    width: 100%;
+    padding: 20px;
+}
+
+.main{
+    padding: 20px;
+    background-color: white;
+    height: 100%;
+}
+
+.hidden{
+    display: none;
+}
+
+#espacoDasNotas{
+    display: grid;
+    justify-content: flex-start;
+    align-items: start;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 600px) {
+    #espacoDasNotas{
+        display: grid;
+        justify-content: flex-start;
+        align-items: start;
+        grid-template-columns: 1fr;
+    }
+
+    #col2{
+        width: 100%;
+    }
+
+    #col2 h1{
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+
+  }
